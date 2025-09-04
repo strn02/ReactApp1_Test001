@@ -1,0 +1,12 @@
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.main-content th, .main-content td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}

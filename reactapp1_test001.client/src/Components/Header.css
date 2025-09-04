@@ -1,0 +1,56 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html / body をフルスクリーンに */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* 横スクロールはメインだけ */
+}
+
+/* 親コンテナをフルスクリーン */
+.container {
+    display: flex;
+    height: 100vh; /* ビューポート高さいっぱい */
+    width: 100%; /* ビューポート幅いっぱい */
+}
+
+/* サイドバー */
+.sidebar {
+    width: 250px;
+    background-color: #bfbfbf;
+    color: white;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+    /* サイドバーのリンク */
+    .sidebar nav a {
+        display: block;
+        padding: 18px;
+        margin-bottom: 8px;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 12px;
+    }
+
+        .sidebar nav a:hover {
+            background-color: #e5e7eb;
+        }
+
+/* ログアウトボタン専用 */
+.sidebar nav a.logout-button {
+    background-color: #dd7e6b; /* 赤色 */
+   }
+
+.sidebar nav a.logout-button:hover {
+    background-color: #cc4125; /* ホバー時は濃い赤 */
+}
